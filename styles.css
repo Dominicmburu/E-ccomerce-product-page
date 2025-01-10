@@ -144,9 +144,9 @@ main{
     transition: all 0.3s ease;
 }
 
-.product-image .more-images img.active {
+.product-image .more-images .preview-image.active {
     border: 3px solid hsl(26, 100%, 55%);
-    filter: blur(4px);
+    filter: blur(0.7px);
 }
 
 .product-image .more-images img.selected {
