@@ -27,9 +27,19 @@
       </ul>
 
       <ul class="icons">
-        <li><img class="cart" src="./images/icon-cart.svg" alt="Shopping cart"></li>
+        <li class="cart-icon">
+          <img class="cart" src="./images/icon-cart.svg" alt="Shopping cart">
+          <span class="cart-count">0</span>
+        </li>
         <li><img class="profile" src="./images/image-avatar.png" alt="Profile"></li>
       </ul>
+
+      <div class="cart-dropdown" id="cart-dropdown">
+        <h4>Cart</h4>
+        <div class="cart-items">
+          <p>Your cart is empty.</p>
+        </div>
+      </div>
 
     </header>
 
@@ -65,9 +75,9 @@
 
         <div class="quantity">
           <div class="quantity-selector">
-            <button><img src="./images/icon-minus.svg" alt=""></button>
-            <span>0</span>
-            <button><img src="./images/icon-plus.svg" alt=""></button>
+            <button class="decrease-quantity"><img src="./images/icon-minus.svg" alt=""></button>
+            <span class="quantity-value">0</span>
+            <button class="increase-quantity"><img src="./images/icon-plus.svg" alt=""></button>
           </div>
           <button class="add-to-cart"><img src="./images/icon-cart.svg" alt="">Add to cart</button>
         </div>

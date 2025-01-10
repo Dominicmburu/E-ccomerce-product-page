@@ -70,6 +70,82 @@ header .icons .cart{
     height: 1.5rem;
 }
 
+.cart-dropdown {
+   display: none;
+   position: absolute;
+   top: 90px;
+   right: 80px;
+   width: 300px;
+   background-color: white;
+   border: 1px solid hsl(0, 0%, 90%);
+   border-radius: 0.5rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+}
+  
+.cart-dropdown h4 {
+  padding: 1rem;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 10%);
+}
+  
+.cart-dropdown .cart-items {
+  padding: 1rem;
+  font-size: 1rem;
+  color: hsl(0, 0%, 45%);
+}
+  
+.cart-dropdown .cart-items p {
+  margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+  
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.25rem;
+}
+  
+.cart-item .item-details {
+    flex-grow: 1;
+}
+  
+.cart-item .item-details p {
+    margin: 0;
+}
+  
+.cart-item .remove-item {
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -142,6 +218,11 @@ main{
     gap: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.product-image .more-images .preview-image:hover{
+    border: 3px solid hsl(26, 100%, 55%);
+    filter: blur(0.7px);
 }
 
 .product-image .more-images .preview-image.active {
@@ -273,6 +354,14 @@ main{
     border: none;
     cursor: pointer;
     padding: 0.5rem;
+}
+
+
+
+.quantity-selector .quantity-value {
+    font-size: 1.2rem;
+    width: 2rem;
+    text-align: center;
 }
 
 .add-to-cart{
